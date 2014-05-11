@@ -4,33 +4,44 @@
 
 {% block head %}
 {{ super() }}
+<link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 {% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">Flasky</a>
+              </button>
+            <a class="navbar-brand" href="#">
+                <img alt="First slide" src="{{ url_for('static', filename='images/logo.jpg') }}">
+            </a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#about">Menu</a></li>
+                <li><a href="#contact">Hours & Directions</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('main.index') }}">Home</a></li>
-            </ul>
-        </div>
+
+      </div>
     </div>
-</div>
 {% endblock %}
 
 {% block content %}
-<div class="container">
+
     {% for message in get_flashed_messages() %}
     <div class="alert alert-warning">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -39,10 +50,11 @@
     {% endfor %}
 
     {% block page_content %}{% endblock %}
-</div>
+
 {% endblock %}
 
 {% block scripts %}
 {{ super() }}
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 {{ moment.include_moment() }}
 {% endblock %}
