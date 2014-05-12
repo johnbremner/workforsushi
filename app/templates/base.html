@@ -57,7 +57,25 @@
 
     {% block page_content %}{% endblock %}
 
+    {% block footer %}
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+        <div class="pull-left">
+          <ul class="list-inline">
+            <li><span class="glyphicon glyphicon-copyright-mark"></span> Robata Grill & Sushi</li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <a href="#">Back to top</a>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+
 {% endblock %}
+
+
 
 {% block scripts %}
 {{ super() }}
