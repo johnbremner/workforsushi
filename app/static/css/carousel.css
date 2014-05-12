@@ -44,6 +44,14 @@ margin-left: 5px;
   border-radius: 4px;
 }
 
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+color: #fff;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
