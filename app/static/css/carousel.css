@@ -69,6 +69,13 @@ color: #fff;
   background-color: #777;
 }
 
+.slide1{
+  background: url('../images/sushi1small.jpg') no-repeat;
+  height: 400px;
+  background-position: center;
+}
+
+
 .carousel address{
   display: none;
 }
@@ -184,4 +191,12 @@ color: #fff;
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+@media (min-width: 767px) {
+.slide1{
+  background: url('../images/sushi1org.jpg') no-repeat;
+  height: 500px;
+  background-position: center;
+}
 }
