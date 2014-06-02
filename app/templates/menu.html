@@ -2,5 +2,90 @@
 
 {% block title %}Robata Grill & Sushi{% endblock %}
 
+{% block head %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/menu.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <address>
+        <strong>Robata Sushi & Grill</strong><br>
+        591 Redwood Hwy<br>
+        Mill Valley, CA 94941<br>
+        <span class="glyphicon glyphicon-phone-alt"></span> (123) 456-7890
+      </address>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="slide1"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Menu<br>
+                <small>Donec ullamcorper nulla non metus auctor fringilla.</small>
+            </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+    <div class="menus container">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Menu Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="sushi">
+                    <h2 id="overview" class="page-header">Sushi</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h3>Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Shiro Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Hamachi <small>$6.60 <br>Chicken of the sea</small></h3>
+                  </div>
+                  <div class="tab-pane" id="sashimi">
+                    <h2 id="overview" class="page-header">Sashimi</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h3>Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Shiro Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Hamachi <small>$6.60 <br>Chicken of the sea</small></h3>
+                  </div>
+                  <div class="tab-pane" id="entrees">
+                    <h2 id="overview" class="page-header">Entrees & Beverages</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h3>Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Shiro Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Hamachi <small>$6.60 <br>Chicken of the sea</small></h3>
+                  </div>
+                  <div class="tab-pane" id="alacarte">
+                    <h2 id="overview" class="page-header">A la Carte</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h3>Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Shiro Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Hamachi <small>$6.60 <br>Chicken of the sea</small></h3>
+                  </div>
+                  <div class="tab-pane" id="lunch">
+                    <h2 id="overview" class="page-header">Lunch</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h3>Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Shiro Maguro <small>$6.60 <br>Chicken of the sea</small></h3>
+                    <h3>Hamachi <small>$6.60 <br>Chicken of the sea</small></h3>
+                  </div>
+                </div><!-- /.menu tab panes -->
+            </div>
+            <!-- Menu Nav Affix -->
+            <div class="col-md-3">
+              <div data-spy="affix" data-offset-top="500" >
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#sushi" data-toggle="tab">Sushi</a></li>
+                  <li><a href="#sashimi" data-toggle="tab">Sashimi</a></li>
+                  <li><a href="#entrees" data-toggle="tab">Entrees & Beverages</a></li>
+                  <li><a href="#alacarte" data-toggle="tab">A la Carte</a></li>
+                  <li><a href="#lunch" data-toggle="tab">Lunch</a></li>
+                </ul>
+              </div>
+            </div><!-- /.Menu Nav Affix -->
+      </div>
+    </div>
+<hr class="featurette-divider">
 {% endblock %}
