@@ -1,8 +1,17 @@
-workforsushi
+How to Run
 ============
 
-Will work for sushi.
+cd to root folder::
 
-testing local
+> cd workforsushi
 
-hello jordan
+activate virtual environment::
+
+> source venv/bin/activate
+
+run app::
+
+> python manage.py runserver
+
+
+
