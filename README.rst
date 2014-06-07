@@ -13,5 +13,7 @@ run app::
 
 > python manage.py runserver
 
+in web browser go to localhost:5000
+
 
 
