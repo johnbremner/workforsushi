@@ -5,6 +5,10 @@ from . import main
 def index():
     return render_template('index.html')
 
-@main.route('/menu')
+@main.route('/about-robata-grill')
+def about():
+    return render_template('about.html')
+
+@main.route('/robata-grill-menu')
 def menu():
     return render_template('menu.html')
