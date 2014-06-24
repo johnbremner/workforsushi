@@ -8,27 +8,24 @@
 {% endblock %}
 
 {% block page_content %}
-    <!-- Carousel
+
+    <!-- Parallax
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="parallax-container">
+    <div class="shadow"></div>
+     <div class="img-holder" data-image="{{ url_for('static', filename='images/test3.jpg') }}" data-image-mobile="img/autumn_season-800x450.jpg" data-width="2000" data-height="1000"></div>
+     <div class="container">
+        <div class="carousel-caption">
+          <h2>Passion in our sushi and work<br>
+          </h2>
+        </div>
       <address>
-        591 Redwood Hwy
-        Mill Valley, CA 
+        591 Redwood Hwy Mill Valley, CA
         <span class="glyphicon glyphicon-phone-alt"></span> (415) 381-8400
       </address>
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="slide1"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Passion in our sushi and work.<br>
-                <small></small>
-            </h1>
-            </div>
-          </div>
-        </div>
       </div>
-    </div><!-- /.carousel -->
+  </div>
+    <!-- /.parallax -->
 
     <div class="menus container">
         <div class="row">
@@ -38,9 +35,11 @@
                   <div class="tab-pane active" id="sushi">
                     <h2 id="overview" class="page-header">Sushi</h2>
                     <p class="lead">Ultimate simplicity leads to purity.  Complete harmony of rice and fish. We offer sushi nigiri - sliced fish on rice, 2 pieces.  Sushi temaki - seaweed wrapped hand roll, 1 piece.  Hosomaki - seafood and/or vegetables in sushi roll, 6 pieces.  </p>
-                    <h3>Maguro <small>$6.60 <br>Tuna</small></h3>
-                    <h3>Shiro Maguro <small>$6.60 <br>Albacore tuna</small></h3>
-                    <h3>Hamachi <small>$6.60 <br>Yellotail</small></h3>
+                    <div class="row">
+                      <div class="col-md-4"><h3>Maguro <small>$6.60 <br>Tuna</small></h3></div>
+                      <div class="col-md-4"><h3>Shiro Maguro <small>$6.60 <br>Albacore tuna</small></h3></div>
+                      <div class="col-md-4"><h3>Hamachi <small>$6.60 <br>Yellotail</small></h3></div>
+                    </div>
                     <h3>Sake <small>$6.60 <br>Salmon</small></h3>
                     <h3>Smoked Sake <small>$6.60 <br>Smoked Salmon</small></h3>
                     <h3>Kani <small>$6.60 <br>Crab</small></h3>

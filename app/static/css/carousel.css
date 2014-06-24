@@ -2,21 +2,28 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html{
+     height:100%;
+     min-height:100%;
+     }
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  min-height:100%;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+background-color: #fff;
+border-color: #fff;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -34,23 +41,55 @@ margin-left: 5px;
 }
 
 .navbar-brand{
-  margin-top: -15px;
   padding: 0px;
 }
 
 .navbar-brand img{
-  width: 150px;
-  border: 1px solid #eee;
-  border-radius: 4px;
+  width: 74px;
 }
 
 .navbar-nav.navbar-right:last-child {
   margin-right: 0px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-color: #fff;
+.navbar-default .navbar-nav>li>a {
+  color: #333;
 }
+
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: #fff;
+color: rgba(51, 51, 51, .5);
+}
+
+/* CUSTOMIZE THE PARALLAX
+-------------------------------------------------- */
+.parallax-container{
+  position: relative;
+}
+
+.shadow{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -moz-box-shadow: inset 0 -260px 260px -80px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 -260px 260px -80px rgba(0,0,0,0.5);
+  box-shadow: inset 0 -260px 260px -80px rgba(0,0,0,0.5);
+}
+
+  .parallax-container address{
+    bottom: 0px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    z-index: 1;
+  }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -61,10 +100,15 @@ color: #fff;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  font-size: 63px;
   left: auto;
   right: auto;
   text-align: left;
   z-index: 10;
+}
+
+.carousel-caption h2{
+  font-size: 63px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -74,22 +118,37 @@ color: #fff;
 
 .slide1{
   background: url('../images/sushi1small.jpg') no-repeat;
-  height: 400px;
+  height: 500px;
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+-webkit-background-size: cover;
+  position: inherit;
 }
 
-
-.carousel address{
-  display: none;
+.slide2{
+  background: url('http://static.squarespace.com/static/515c7b5ae4b0875140c3d94a/t/51ddd0fbe4b08840dcfa63df/1373491483003/IMG_5693-Edit.jpg') no-repeat;
+width: 100%;
+height: 500px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center 0;
+background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-wwebkit-backface-visibility:hidden
 }
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
+  margin-top: 80px;
   padding-right: 15px;
   padding-left: 15px;
+  position: static;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -131,15 +190,14 @@ color: #fff;
 
 @media (min-width: 768px) {
 
-  .carousel address{
-    bottom: 0px;
-    color: #fff;
-    display: block;
-    position: absolute;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    right: 25px;
-    z-index: 1;
-  }
+.navbar-brand img{
+  width: 105px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  padding-top:28px;
+  padding-bottom: 28px;
+}
 
   /* Remove the edge padding needed for mobile */
   .marketing {
@@ -192,7 +250,7 @@ color: #fff;
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 0px;
   }
 }
 
@@ -201,5 +259,10 @@ color: #fff;
   background: url('../images/sushi1org.jpg') no-repeat;
   height: 500px;
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+-webkit-background-size: cover;
+  position: static;
 }
+
 }
