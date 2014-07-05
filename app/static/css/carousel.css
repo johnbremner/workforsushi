@@ -2,6 +2,10 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+.robataColor{
+  color: #67bdb4;
+}
+
 html{
      height:100%;
      min-height:100%;
@@ -59,7 +63,7 @@ margin-left: 5px;
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 text-decoration: none;
 background-color: #fff;
-color: #008e68;
+color: #67bdb4;
 }
 
 /* CUSTOMIZE THE PARALLAX
@@ -197,6 +201,16 @@ background-size: cover;
 .navbar-default .navbar-nav>li>a {
   padding-top:28px;
   padding-bottom: 28px;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>.address {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default .navbar-nav>li>.address>address {
+  margin-bottom: 0px;
 }
 
   /* Remove the edge padding needed for mobile */
