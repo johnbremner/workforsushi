@@ -56,10 +56,10 @@ margin-left: 5px;
   color: #333;
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 text-decoration: none;
 background-color: #fff;
-color: rgba(51, 51, 51, .5);
+color: #008e68;
 }
 
 /* CUSTOMIZE THE PARALLAX
