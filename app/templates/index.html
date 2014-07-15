@@ -8,11 +8,11 @@
     ================================================== -->
   <div class="parallax-container">
     <div class="shadow"></div>
-     <div class="img-holder" data-image="{{ url_for('static', filename='images/test7.jpg') }}" data-image-mobile="img/autumn_season-800x450.jpg" data-width="2000" data-height="1000"></div>
+     <div class="img-holder" data-image="{{ url_for('static', filename='images/test7.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test7.jpg') }}" data-width="2000" data-height="1000"></div>
      <div class="container">
         <div class="carousel-caption">
-          <h2>Kangei (welcome)<br>
-            <small class="robataColor">Centuries old country style cooking</small>
+          <h2>Yokoso (welcome)<br>
+            <small class="robataColor">Robata Grill & Sushi</small>
           </h2>
         </div>
 <!--         <address>
@@ -30,24 +30,24 @@
     <div class="marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="container">
+      <div class="container featurette">
         <div class="row">
           <div class="col-lg-4">
-            <img class="img-circle"  alt="140x140" src="{{ url_for('static', filename='images/heading1.jpg') }}" style="width: 140px; height: 140px;">
+            <img class="img-square"  alt="140x140" src="{{ url_for('static', filename='images/heading1.jpg') }}" style="width: 200px; height: 200px;">
             <h2>Welcome to Robata</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p>Robata's tradition of centuries old country style coooking.</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/heading2.jpg') }}" style="width: 140px; height: 140px;">
+            <img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/heading2.jpg') }}" style="width: 200px; height: 200px;">
             <h2>Menu</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p>Simple and delicious sushi.  By the fireside cooking.</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/heading3.jpg') }}" style="width: 140px; height: 140px;">
+            <img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/heading3.jpg') }}" style="width: 200px; height: 200px;">
             <h2>Hours & Directions</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Open daily</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -55,11 +55,25 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+        <!-- Parallax
+        ================================================== -->
+      <div class="parallax-container">
+        <div class="shadow"></div>
+         <div class="img-holder" data-image="{{ url_for('static', filename='images/test2.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test2.jpg') }}" data-width="2000" data-height="1000"></div>
+         <div class="container">
+            <div class="carousel-caption">
+              <h2>Kangei (welcome)<br>
+                <small class="robataColor">Centuries old country style cooking</small>
+              </h2>
+            </div>
+          </div>
+      </div>
+        <!-- /.parallax -->
+
         <div class="container">
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Sushi is a very simple, unique <span class="text-muted">Japanese Cuisine</span></h2>
+            <h2 class="featurette-heading">Sushi is a very simple, unique <span class="text-danger">Japanese Cuisine</span></h2>
             <p class="lead">But there is no use trying to skimp - only genuine professional sushi can reach your heart. You will appreciate the excellence of the professional sushi chefs at Robata.  Enjoy fresh fish from the sea directly to your table.</p>
           </div>
           <div class="col-md-5">
@@ -68,60 +82,52 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-    <!-- Parallax
-    ================================================== -->
-  <div class="parallax-container">
-    <div class="shadow"></div>
-     <div class="img-holder" data-image="{{ url_for('static', filename='images/test2.jpg') }}" data-image-mobile="img/autumn_season-800x450.jpg" data-width="2000" data-height="1000"></div>
-     <div class="container">
-        <div class="carousel-caption">
-          <h2>Kangei (welcome)<br>
-            <small>Centuries old country style cooking</small>
-          </h2>
-        </div>
+        <!-- Parallax
+        ================================================== -->
+      <div class="parallax-container">
+        <div class="shadow"></div>
+         <div class="img-holder" data-image="{{ url_for('static', filename='images/test3.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test2.jpg') }}" data-width="2000" data-height="1000"></div>
+         <div class="container">
+            <div class="carousel-caption">
+            <h2>Fresh and Delicious<br>
+              <small class="robataColor">Sushi</small>
+              </h2>
+            </div>
+          </div>
       </div>
-  </div>
-    <!-- /.parallax -->
-
-      <hr class="featurette-divider">
+        <!-- /.parallax -->
 
       <div class="container">
         <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">History of <span class="text-danger">Sushi</span></h2>
+            <p class="lead">Sushi is one of the healthiest meals around, originating back to the 4th century BC of Southeast Asia.  Salted fish fermented with rice was an important source of preservation. Japan popularized eating the fish with rice and sushi became more of a cuisine rather than a way to preserve food.Eventually rice was mixed with vinegar and combined with various vegetables and dried preserved foods.  Each region of Japan still preserves its own unique taste by utilizing local products that have been passed on for generations.</p>
+          </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive" alt="500x500" src="{{ url_for('static', filename='images/test15.jpg') }}">
           </div>
-          <div class="col-md-7">
-            <h2 class="featurette-heading">History of <span class="text-muted">Sushi</span></h2>
-            <p class="lead">Sushi is one of the healthiest meals around, originating back to the 4th century BC of Southeast Asia.  Salted fish fermented with rice was an important source of preservation. Japan popularized eating the fish with rice and sushi became more of a cuisine rather than a way to preserve food.Eventually rice was mixed with vinegar and combined with various vegetables and dried preserved foods.  Each region of Japan still preserves its own unique taste by utilizing local products that have been passed on for generations.</p>
+        </div>
+      </div>
+
+        <!-- Parallax
+        ================================================== -->
+      <div class="parallax-container">
+        <div class="shadow"></div>
+         <div class="img-holder" data-image="{{ url_for('static', filename='images/test3.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test3.jpg') }}" data-width="2000" data-height="1000"></div>
+         <div class="container">
+            <div class="carousel-caption">
+            <h2>Traditional sushi<br>
+              <small class="robataColor">World class Japanese food</small>
+              </h2>
+            </div>
           </div>
-        </div>
       </div>
-
-      <hr class="featurette-divider">
-
-    <!-- Parallax
-    ================================================== -->
-  <div class="parallax-container">
-    <div class="shadow"></div>
-     <div class="img-holder" data-image="{{ url_for('static', filename='images/test3.jpg') }}" data-image-mobile="img/autumn_season-800x450.jpg" data-width="2000" data-height="1000"></div>
-     <div class="container">
-        <div class="carousel-caption">
-          <h2>Kangei (welcome)<br>
-            <small>Centuries old country style cooking</small>
-          </h2>
-        </div>
-      </div>
-  </div>
-    <!-- /.parallax -->
-
-      <hr class="featurette-divider">
+        <!-- /.parallax -->
 
       <div class="container">
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Hours and Directions<span class="text-muted"></span></h2>
+            <h2 class="featurette-heading">Hours and Directions<span class="text-danger"></span></h2>
             <p class="lead">Hours of Operation: Lunch Hours | Mon-Fri 11:30am-2pm
               Dinner Hours | Mon-Thurs 5:30pm-9:30pm | Fri and Sat 5:30pm-10pm | Sun 5pm-9pm</p>
           </div>
@@ -132,7 +138,7 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+
 
       <!-- /END THE FEATURETTES -->
 

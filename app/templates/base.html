@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block navbar %}
-<nav class="navbar navbar-default navbar-static-top bs-docs-nav" id="top" role="banner">
+<nav class="navbar navbar-default navbar-static-top bs-docs-nav headerFooterStyle" id="top" role="banner">
   <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,13 +26,13 @@
             </a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-left">
+              <ul class="nav navbar-nav navbar-left baseTextStyleUl">
                 <li><a href="{{url_for('.index')}}"><strong>WELCOME</strong></a></li>
                 <li><a href="{{url_for('.about')}}"><strong>OUR STORY</strong></a></li>
                 <li><a href="{{url_for('.menu')}}"><strong>MENU</strong></a></li>
                 <li><a href="#contact"><strong>HOURS & DIRECTIONS</strong></a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right baseTextStyleUl">
                 <li>
                   <a class="address">
                     <address>
@@ -41,10 +41,6 @@
                   </a>
                 </li>
               </ul>
-<!--                 <li><a href="#contact"><i class="fa fa-facebook fa-lg" title="facebook"></i></a></li>
-                <li><a href="#contact"><i class="fa fa-twitter fa-lg" title="twitter"></i></a></li>
-                <li><a href="#contact"><i class="fa fa-youtube fa-lg" title="youtube"></i></a></li>
-  -->
             </div>
   </div>
 </nav>
@@ -62,16 +58,34 @@
     {% block page_content %}{% endblock %}
 
     {% block footer %}
-    <footer role="contentinfo">
+    <footer class="headerFooterStyle" role="contentinfo">
       <div class="container">
-        <div class="pull-left">
-          <ul class="list-inline">
-            <li><span class="glyphicon glyphicon-copyright-mark"></span> Robata Grill & Sushi</li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="list-unstyled list-inline baseTextStyleUl">
+                <li><a class="socialIcons"  href="#"><i class="fa fa-facebook fa-5x" title="facebook"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-twitter fa-5x" title="twitter"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-youtube fa-5x" title="youtube"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-spoon fa-5x" title="spoon"></i></a></li>
+            <ul>
+          </div>
         </div>
-        <div class="pull-right">
-          <a href="#"><i class="fa fa-arrow-up"></i> Back to top</a>
+        <div class="row footerMargin">
+          <div class="col-md-12 text-center">
+            <div class="pull-left">
+              <ul class="list-inline">
+                <li><span class="glyphicon glyphicon-copyright-mark"></span> Robata Grill & Sushi</li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Hours & Directions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="pull-right">
+              <a href="#"><i class="fa fa-arrow-up"></i> Back to top</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -87,10 +101,19 @@
 <script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='js/jquery.imageScroll.min.js') }}"></script>
 {{ moment.include_moment() }}
 <script>
+if(  document.addEventListener  ){
     var touch = Modernizr.touch;
     $('.img-holder').imageScroll({
         imageAttribute: (touch === true) ? 'image-mobile' : 'image',
         touch: touch
     });
+} else {
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch,
+        parallax: false
+    });
+}
 </script>
 {% endblock %}

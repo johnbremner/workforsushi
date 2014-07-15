@@ -3,7 +3,26 @@
 /* Padding below the footer and lighter body text */
 
 .robataColor{
-  color: #67bdb4;
+  color: #5fb9af;
+}
+
+.robataColor:hover{
+  color: #59b0a7;
+}
+
+.robataBorderColor{
+  color: #59b0a7;
+}
+
+.headerFooterStyle .baseTextStyleUl li>a{
+  color: #333;
+  margin-bottom: 0px;
+  padding-top:28px;
+  padding-bottom: 28px;
+}
+
+.headerFooterStyle .baseTextStyleUl li>a:hover, .baseTextStyleUl li>a:focus{
+  color: #59b0a7;
 }
 
 html{
@@ -12,9 +31,28 @@ html{
      }
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
   min-height:100%;
+}
+
+a{
+ color: #5fb9af;
+}
+
+a:hover, a:focus{
+  color: #59b0a7;
+}
+
+.btn-default {
+color: #fff;
+background-color: #5fb9af;
+border-color: #59b0a7;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+color: #fff;
+background-color: #59b0a7;
+border-color: #59b0a7;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -56,14 +94,12 @@ margin-left: 5px;
   margin-right: 0px;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: #333;
-}
+/* CUSTOMIZE THE FEATURETTE
+-------------------------------------------------- */
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-text-decoration: none;
-background-color: #fff;
-color: #67bdb4;
+.featurette{
+  margin-top: 25px;
+  margin-bottom: 75px;
 }
 
 /* CUSTOMIZE THE PARALLAX
@@ -104,15 +140,12 @@ color: #67bdb4;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  font-size: 63px;
+  font-size: 30px;
   left: auto;
+  padding-right: 15px;
   right: auto;
   text-align: left;
   z-index: 10;
-}
-
-.carousel-caption h2{
-  font-size: 63px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -149,15 +182,13 @@ background-size: cover;
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  margin-top: 80px;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-top: 75px;
   position: static;
 }
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .marketing h2 {
@@ -185,9 +216,29 @@ background-size: cover;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 15px;
+margin-bottom: 25px;
 }
 
+/* FOOTER
+-------------------------------------------------- */
 
+footer{
+  background-color: #222;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.headerFooterStyle .baseTextStyleUl .socialIcons{
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.footerMargin{
+  margin-top: 25px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -198,12 +249,6 @@ background-size: cover;
   width: 105px;
 }
 
-.navbar-default .navbar-nav>li>a {
-  padding-top:28px;
-  padding-bottom: 28px;
-  margin-bottom: 0px;
-}
-
 .navbar-default .navbar-nav>li>.address {
   padding-left: 0px;
   padding-right: 0px;
@@ -211,6 +256,10 @@ background-size: cover;
 
 .navbar-default .navbar-nav>li>.address>address {
   margin-bottom: 0px;
+}
+
+.carousel-caption h2{
+  font-size: 63px;
 }
 
   /* Remove the edge padding needed for mobile */
@@ -256,6 +305,10 @@ background-size: cover;
     font-size: 21px;
     line-height: 1.4;
   }
+
+.featurette{
+  margin-top: 75px;
+}
 
   .featurette-heading {
     font-size: 60px;
