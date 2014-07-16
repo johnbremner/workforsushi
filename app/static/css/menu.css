@@ -1,11 +1,3 @@
-.menus{
-  margin-top: 80px;
-}
-
-.menus .page-header{
-  margin-top: 0px;
-}
-
 .body {
   position: relative;
 }
@@ -22,4 +14,42 @@
 }
 .affix-top {
   //i didn't need this style but you might
+}
+
+.col-md-2 {
+  display: none;
+}
+
+.menus{
+  margin-top: 75px;
+}
+
+.menus .page-header{
+  margin-top: 0px;
+}
+
+.tab-content>.tab-pane {
+  display: block;
+  margin-top: 75px;
+}
+
+.tab-content>.tab-pane:first-child {
+  margin-top: 0px;
+}
+
+.tab-content>.active {
+  margin-top: 75px;
+}
+
+@media (min-width: 992px) {
+  .col-md-2 {
+      display: block;
+  }
+  .tab-content>.tab-pane {
+    display: none;
+  }
+  .tab-content>.active {
+  display: block;
+  margin-top: 0px;
+  }
 }
