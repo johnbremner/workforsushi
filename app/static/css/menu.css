@@ -1,0 +1,55 @@
+.body {
+  position: relative;
+}
+.affix {
+  width: inherit; //helped keep the content the same size on fluid layouts
+  position: fixed;
+  top: 75px;  //height of the nav
+}
+.affix-bottom {
+  width: inherit;
+  position: absolute;
+  top: auto;
+  bottom: 200px;  //height of the footer
+}
+.affix-top {
+  //i didn't need this style but you might
+}
+
+.col-md-2 {
+  display: none;
+}
+
+.menus{
+  margin-top: 75px;
+}
+
+.menus .page-header{
+  margin-top: 0px;
+}
+
+.tab-content>.tab-pane {
+  display: block;
+  margin-top: 75px;
+}
+
+.tab-content>.tab-pane:first-child {
+  margin-top: 0px;
+}
+
+.tab-content>.active {
+  margin-top: 75px;
+}
+
+@media (min-width: 992px) {
+  .col-md-2 {
+      display: block;
+  }
+  .tab-content>.tab-pane {
+    display: none;
+  }
+  .tab-content>.active {
+  display: block;
+  margin-top: 0px;
+  }
+}

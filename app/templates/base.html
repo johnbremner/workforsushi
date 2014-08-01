@@ -1,0 +1,120 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ url_for('static', filename='font-awesome-4.0.3/css/font-awesome.min.css') }}" rel="stylesheet" >
+<link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap_override.css') }}" rel="stylesheet">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-default navbar-static-top bs-docs-nav headerFooterStyle" id="top" role="banner">
+  <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="{{url_for('.index')}}">
+                <img alt="First slide" src="{{ url_for('static', filename='images/logo.jpg') }}">
+            </a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left baseTextStyleUl">
+                <li><a href="{{url_for('.index')}}"><strong>WELCOME</strong></a></li>
+                <li><a href="{{url_for('.about')}}"><strong>OUR STORY</strong></a></li>
+                <li><a href="{{url_for('.menu')}}"><strong>MENU</strong></a></li>
+                <li><a href="#contact"><strong>HOURS & DIRECTIONS</strong></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right baseTextStyleUl">
+                <li>
+                  <a class="address">
+                    <address>
+                      <span class="glyphicon glyphicon-phone-alt robataColor"></span> (415) 381-8400
+                    </address>
+                  </a>
+                </li>
+              </ul>
+            </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}{% endblock %}
+
+    {% block footer %}
+    <footer class="headerFooterStyle" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="list-unstyled list-inline baseTextStyleUl">
+                <li><a class="socialIcons"  href="#"><i class="fa fa-facebook fa-5x" title="facebook"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-twitter fa-5x" title="twitter"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-youtube fa-5x" title="youtube"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-spoon fa-5x" title="spoon"></i></a></li>
+            <ul>
+          </div>
+        </div>
+        <div class="row footerMargin">
+          <div class="col-md-12 text-center">
+            <div class="pull-left">
+              <ul class="list-inline">
+                <li><span class="glyphicon glyphicon-copyright-mark"></span> Robata Grill & Sushi</li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Hours & Directions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="pull-right">
+              <a href="#"><i class="fa fa-arrow-up"></i> Back to top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+
+{% endblock %}
+
+
+
+{% block scripts %}
+{{ super() }}
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='js/jquery.imageScroll.min.js') }}"></script>
+{{ moment.include_moment() }}
+<script>
+if(  document.addEventListener  ){
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch
+    });
+} else {
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch,
+        parallax: false
+    });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Robata Grill & Sushi{% endblock %}
+
+{% block page_content %}
+
+    <!-- Parallax
+    ================================================== -->
+  <div class="parallax-container">
+    <div class="shadow"></div>
+     <div class="img-holder" data-image="{{ url_for('static', filename='images/toothpick2.1.jpg') }}" data-image-mobile="img/autumn_season-800x450.jpg" data-width="2000" data-height="1000"></div>
+     <div class="container">
+        <div class="carousel-caption">
+          <h2>Past. Present. Future.<br>
+            <small class="robataColor">Robata Grill & Sushi</small>
+          </h2>
+        </div>
+        <!--<address>
+          591 Redwood Hwy Mill Valley, CA
+          <span class="glyphicon glyphicon-phone-alt"></span> (415) 381-8400
+        </address>-->
+      </div>
+  </div>
+    <!-- /.parallax -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Robata <span class="text-danger">Tradition</span></h2>
+          <p class="lead">In Japanese, Robata means "by the fireside" and refers to the centuries-old country style cooking of northern Japanese fisherman. Evenings in coastal villages found fisherman cooking their catch over an open fire, then sharing amoung themselves by passing food on oars from boat to boat. Our menu honors the Robata tradition of sharing and sampling.  Appetizer-size portions allow you to feast on a variety of authenitc Robata dishes.  Delicious possiblities are limited only by the whims of your palate and size of your appetite.  We hope you'll enjoy this unique, free-style dining at Robata Grill.  The warm, friendly atmosphere of open flame cooking adds to any meal, anywhere in the world.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive"  alt="500x500" src="{{ url_for('static', filename='images/RiceToss4.3.jpg') }}">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" alt="500x500" src="{{ url_for('static', filename='images/shinji.jpg') }}">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Head Chef <span class="text-danger">Shinji Kawasaki</span></h2>
+          <p class="lead">Shinji was born and raised in Osaka, Japan. Arguably the food capital of Japan. Working in restaurants at a very early age, he learned from some of the best chefs in the city and after many years of training he became Itamae (head sushi chef).  He was asked to travel to San Francisco to train prospects in the art of sushi making for the trade that was about to boom.  Shinji has been making sushi in Marin for over 20 years and 14 of them at Robata.  He is currently a part owner and lives with his wife and 2 daughters in Mill Valley. </p>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">General Manager and Owner <span class="text-danger">Fred Obayashi</span></h2>
+          <p class="lead">Born in Vancouver, B.C., Canada from a family of commercial salmon fisherman.  He spent summers salmon fishing with his father along the British Columbia coast from Washington to Alaska.  Fished on his own boat through his 20s and worked as a cook, bartender and eventually a manager.  Opened his first sushi bar in 1984 in Vancouver and a second restaurant in Toronto in 1985.  Moved to Marin in 1987 and started as the General Manager of Robata, becoming partner in 1989.  Fred has been managing ever since and lives in Mill Valley with his wife while his daughter resides in New York.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" alt="500x500" src="{{ url_for('static', filename='images/5002.jpg') }}">
+        </div>
+
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+{% endblock %}

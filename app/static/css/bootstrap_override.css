@@ -1,0 +1,23 @@
+/* Override the nav-pills with custom style for the right rail menu-affix
+ */
+ .menu-affix .nav>li>a,  .menu-affix .nav>li>a {
+text-decoration: none;
+background-color: #fff;
+border-left: 2px solid #fff;
+padding: 10px 10px;
+}
+ .menu-affix .nav>li>a:hover,  .menu-affix .nav>li>a:focus {
+text-decoration: none;
+background-color: #fff;
+border-left: 2px solid #a94442;
+}
+
+ .menu-affix .nav-pills>li.active>a,  .menu-affix .nav-pills>li.active>a:hover,  .menu-affix .nav-pills>li.active>a:focus {
+background-color: #fff;
+border-left: 2px solid #a94442;
+color: #a94442;
+}
+
+ .menu-affix .nav-pills>li>a {
+border-radius: 0px;
+}
