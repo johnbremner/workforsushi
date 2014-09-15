@@ -111,12 +111,20 @@ margin-top: 20px;
 margin-bottom: 20px;
 }
 
+.nav li .phone{
+  padding-left: 0px;
+}
+
 /* CUSTOMIZE THE FEATURETTE
 -------------------------------------------------- */
 
 .featurette{
   margin-top: 25px;
   margin-bottom: 75px;
+}
+
+.featurette-image{
+  margin: 0 auto;
 }
 
 /* CUSTOMIZE THE PARALLAX
@@ -199,7 +207,6 @@ background-size: cover;
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  margin-top: 75px;
   position: static;
 }
 
