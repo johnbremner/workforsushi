@@ -29,8 +29,8 @@
 .headerFooterStyle .baseTextStyleUl li>a{
   color: #333;
   margin-bottom: 0px;
-  padding-top:28px;
-  padding-bottom: 28px;
+  padding-top:15px;
+  padding-bottom: 15px;
 }
 
 .headerFooterStyle .baseTextStyleUl li>a:hover, .baseTextStyleUl li>a:focus{
@@ -112,7 +112,7 @@ margin-bottom: 20px;
 }
 
 .nav li .phone{
-  padding-left: 0px;
+  padding-left: 15px;
 }
 
 /* CUSTOMIZE THE FEATURETTE
@@ -268,6 +268,15 @@ footer{
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
+
+.headerFooterStyle .baseTextStyleUl li>a{
+  padding-top:28px;
+  padding-bottom: 28px;
+}
+
+.nav li .phone{
+  padding-left: 0px;
+}
 
 .navbar-default .navbar-nav>li>.address {
   padding-left: 0px;
