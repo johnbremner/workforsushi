@@ -2,6 +2,18 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+.start{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    color: #fff;
+    z-index: 50;
+    background-color: #a94442;
+    padding: 5px 20px 0px 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
 .fa-spoon{
      -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -30,7 +42,7 @@
   color: #333;
   margin-bottom: 0px;
   padding-top:15px;
-  padding-bottom: 15px;
+  padding-bottom: 15  px;
 }
 
 .headerFooterStyle .baseTextStyleUl li>a:hover, .baseTextStyleUl li>a:focus{
