@@ -7,8 +7,8 @@
     <!-- Parallax
     ================================================== -->
   <div class="parallax-container">
-    <div class="shadow"></div>
-     <div class="img-holder" data-image="{{ url_for('static', filename='images/test7.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test7.jpg') }}" data-width="2000" data-height="1000"></div>
+  <a class="start" href="#start"><i class="fa fa-chevron-down fa-3x"></i></a>
+     <div class="img-holder " data-image="{{ url_for('static', filename='images/test7.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test7.jpg') }}" data-width="2000" data-height="1000"></div>
      <div class="container">
         <div class="carousel-caption">
           <h2>Irashai Mase (welcome)<br>
@@ -26,29 +26,28 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="marketing">
 
       <!-- Three columns of text below the carousel -->
       <div class="container featurette">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <img class="img-square"  alt="140x140" src="{{ url_for('static', filename='images/flowers.jpg') }}" style="width: 200px; height: 200px;">
+            <a href="{{ url_for('.about') }}"><img class="img-square"  alt="140x140" src="{{ url_for('static', filename='images/flowers.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Story of Robata</h2>
             <p>The tradition of centuries old country style coooking.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p><a class="btn btn-default" href="{{ url_for('.about') }}"  role="button">Our Story »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/eel4.3.jpg') }}" style="width: 200px; height: 200px;">
+            <a href="{{ url_for('.menu') }}"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/eel4.3.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Menu</h2>
             <p>Simple and delicious sushi.  By the fireside cooking.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p><a class="btn btn-default" href="{{ url_for('.menu') }}" role="button">Menu »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;">
+            <a href="#hours-and-directions"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Hours & Directions</h2>
             <p>591 Redwood Hwy Mill Valley, CA</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p><a class="btn btn-default" href="#hours-and-directions" role="button">Hours & Directions »</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div>
@@ -58,7 +57,6 @@
         <!-- Parallax
         ================================================== -->
       <div class="parallax-container">
-        <div class="shadow"></div>
          <div class="img-holder" data-image="{{ url_for('static', filename='images/oragami2.1.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/oragami2.1.jpg') }}" data-width="2000" data-height="1000"></div>
          <div class="container">
             <div class="carousel-caption">
@@ -85,7 +83,6 @@
         <!-- Parallax
         ================================================== -->
       <div class="parallax-container">
-        <div class="shadow"></div>
          <div class="img-holder" data-image="{{ url_for('static', filename='images/eeltuna22.1.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/eeltuna22.1.jpg') }}" data-width="2000" data-height="1000"></div>
          <div class="container">
             <div class="carousel-caption">
@@ -112,7 +109,6 @@
         <!-- Parallax
         ================================================== -->
       <div class="parallax-container">
-        <div class="shadow"></div>
          <div class="img-holder" data-image="{{ url_for('static', filename='images/cutting2.1.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/cutting2.1.jpg') }}" data-width="2000" data-height="1000"></div>
          <div class="container">
             <div class="carousel-caption">
@@ -124,7 +120,7 @@
       </div>
         <!-- /.parallax -->
 
-      <div class="container">
+      <div id="hours-and-directions" class="container">
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Hours and <span class="text-danger">Directions</span></h2>
@@ -134,7 +130,7 @@
           </div>
           <div class="col-md-5">
               <iframe width="100%" height="500" frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?q=591%20Redwood%20Hwy%2C%20Mill%20Valley%2C%20CA%2094941%2C%20United%20States&key=AIzaSyDOtabQ4Iq9dpdsWrT_2ufS60zZpFdRnnM"></iframe>
+              src="https://www.google.com/maps/embed/v1/place?q=591%20Redwood%20Hwy%2C%20Mill%20Valley%2C%20CA%2094941%2C%20United%20States&key=AIzaSyDOtabQ4Iq9dpdsWrT_2ufS60zZpFdRnnM&zoom=11"></iframe>
           </div>
         </div>
       </div>

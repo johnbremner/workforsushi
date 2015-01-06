@@ -4,8 +4,8 @@
 
 {% block head %}
 {{ super() }}
-<link href="{{ url_for('static', filename='font-awesome-4.0.3/css/font-awesome.min.css') }}" rel="stylesheet" >
-<link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='font-awesome-4.2.0/css/font-awesome.min.css') }}" rel="stylesheet" >
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/bootstrap_override.css') }}" rel="stylesheet">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
@@ -35,11 +35,7 @@
               </ul>
               <ul class="nav navbar-nav navbar-right baseTextStyleUl">
                 <li>
-                  <a class="address">
-                    <address>
-                      <span class="glyphicon glyphicon-phone-alt robataColor"></span> (415) 381-8400
-                    </address>
-                  </a>
+                  <a class="phone" href="tel:1-415-381-8400"><span class="glyphicon glyphicon-phone-alt robataColor"></span> (415) 381-8400</a>
                 </li>
               </ul>
             </div>
@@ -63,10 +59,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <ul class="list-unstyled list-inline baseTextStyleUl">
+            <ul class="list-unstyled list-inline baseTextStyleUl social-list">
                 <li><a class="socialIcons"  href="#"><i class="fa fa-facebook fa-5x" title="facebook"></i></a></li>
                 <li><a class="socialIcons"  href="#"><i class="fa fa-twitter fa-5x" title="twitter"></i></a></li>
                 <li><a class="socialIcons"  href="#"><i class="fa fa-youtube fa-5x" title="youtube"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-yelp fa-5x" title="yelp"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-foursquare fa-5x" title="foursquare"></i></a></li>
+                <li><a class="socialIcons"  href="#"><i class="fa fa-pinterest fa-5x" title="pinterest"></i></a></li>
                 <li><a class="socialIcons"  href="#"><i class="fa fa-spoon fa-5x" title="spoon"></i></a></li>
             <ul>
           </div>
@@ -76,10 +75,10 @@
             <div class="pull-left">
               <ul class="list-inline">
                 <li><span class="glyphicon glyphicon-copyright-mark"></span> Robata Grill & Sushi</li>
-                <li><a href="#">Welcome</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Hours & Directions</a></li>
+                <li><a href="{{ url_for('.index') }}">Welcome</a></li>
+                <li><a href="{{ url_for('.about') }}">Our Story</a></li>
+                <li><a href="{{ url_for('.menu') }}">Menu</a></li>
+                <li><a href="#hours-and-directions">Hours & Directions</a></li>
                 <li><a href="#">Contact Us</a></li>
               </ul>
             </div>

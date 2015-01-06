@@ -1,0 +1,367 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.start{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    color: #fff;
+    z-index: 50;
+    background-color: #a94442;
+    padding: 5px 20px 0px 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.fa-spoon{
+     -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.social-list li{
+ margin-top: 10px;
+}
+
+.robataColor{
+  color: #5fb9af;
+}
+
+.robataColor:hover{
+  color: #59b0a7;
+}
+
+.robataBorderColor{
+  color: #59b0a7;
+}
+
+.headerFooterStyle .baseTextStyleUl li>a{
+  color: #333;
+  margin-bottom: 0px;
+  padding-top:15px;
+  padding-bottom: 15  px;
+}
+
+.headerFooterStyle .baseTextStyleUl li>a:hover, .baseTextStyleUl li>a:focus{
+  color: #59b0a7;
+}
+
+html{
+     height:100%;
+     min-height:100%;
+     }
+
+body {
+  color: #5a5a5a;
+  min-height:100%;
+}
+
+a{
+ color: #5fb9af;
+}
+
+a:hover, a:focus{
+  color: #59b0a7;
+}
+
+.btn-default {
+color: #fff;
+background-color: #5fb9af;
+border-color: #59b0a7;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+color: #fff;
+background-color: #59b0a7;
+border-color: #59b0a7;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+background-color: #fff;
+border-color: #fff;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+margin-left: 5px;
+}
+
+.navbar-brand{
+  padding: 0px;
+}
+
+.navbar-brand img{
+  width: 105px;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px;
+}
+
+.navbar-toggle {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.nav li .phone{
+  padding-left: 15px;
+}
+
+/* CUSTOMIZE THE FEATURETTE
+-------------------------------------------------- */
+
+.featurette{
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.featurette-image{
+  margin: 0 auto;
+}
+
+/* CUSTOMIZE THE PARALLAX
+-------------------------------------------------- */
+.parallax-container{
+  position: relative;
+}
+
+  .parallax-container address{
+    bottom: 0px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    z-index: 1;
+  }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 50px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  font-size: 30px;
+  left: auto;
+  padding-right: 15px;
+  right: auto;
+  text-align: left;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
+}
+
+.slide1{
+  background: url('../images/sushi1small.jpg') no-repeat;
+  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+-webkit-background-size: cover;
+  position: inherit;
+}
+
+.slide2{
+  background: url('http://static.squarespace.com/static/515c7b5ae4b0875140c3d94a/t/51ddd0fbe4b08840dcfa63df/1373491483003/IMG_5693-Edit.jpg') no-repeat;
+width: 100%;
+height: 500px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center 0;
+background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-wwebkit-backface-visibility:hidden
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  position: static;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-divider:last-child{
+  margin-bottom: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 15px;
+margin-bottom: 25px;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+
+footer{
+  background-color: #222;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.headerFooterStyle .baseTextStyleUl .socialIcons{
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.footerMargin{
+  margin-top: 25px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+.headerFooterStyle .baseTextStyleUl li>a{
+  padding-top:28px;
+  padding-bottom: 28px;
+}
+
+.nav li .phone{
+  padding-left: 0px;
+}
+
+.navbar-default .navbar-nav>li>.address {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default .navbar-nav>li>.address>address {
+  margin-bottom: 0px;
+}
+
+.carousel-caption h2{
+  font-size: 63px;
+}
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 35px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .navbar-wrapper .navbar-fixed-top{
+    border-radius: 0px;
+  }
+
+ .navbar-wrapper .navbar-fixed-top .navbar-brand{
+    margin-top: 0px;
+ }
+
+ .navbar-wrapper .navbar-fixed-top .navbar-brand img{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+ }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+.featurette{
+  margin-top: 75px;
+}
+
+  .featurette-heading {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 767px) {
+.slide1{
+  background: url('../images/sushi1org.jpg') no-repeat;
+  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+-webkit-background-size: cover;
+  position: static;
+}
+
+.navbar-toggle {
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+}

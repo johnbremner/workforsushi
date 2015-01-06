@@ -16,16 +16,25 @@
   //i didn't need this style but you might
 }
 
+.menu-affix{
+  margin-top: 75px;
+}
+
 .col-md-2 {
   display: none;
 }
 
+.extra-margin-top{
+  margin-top: 50px;
+}
+
 .menus{
-  margin-top: 75px;
+  margin-top: 0px;
+  margin-bottom: 75px;
 }
 
 .menus .page-header{
-  margin-top: 0px;
+  margin-top: 75px;
 }
 
 .tab-content>.tab-pane {
