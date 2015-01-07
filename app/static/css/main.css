@@ -3,15 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 .start{
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    color: #fff;
-    z-index: 50;
-    background-color: #a94442;
-    padding: 5px 20px 0px 20px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+  display: none;
 }
 
 .fa-spoon{
@@ -163,12 +155,19 @@ margin-bottom: 20px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  bottom: auto;
   font-size: 30px;
   left: auto;
-  padding-right: 15px;
+  padding: 0px;
   right: auto;
-  text-align: left;
+  text-align: center;
+  top: 0%;
+  width: 100%;
   z-index: 10;
+}
+
+.carousel-caption h2{
+  font-size: 63px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -267,6 +266,20 @@ footer{
 
 @media (min-width: 768px) {
 
+.start{
+  display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -47px;
+    color: #fff;
+    z-index: 50;
+    background-color: #a94442;
+    padding: 5px 20px 0px 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
 .headerFooterStyle .baseTextStyleUl li>a{
   padding-top:28px;
   padding-bottom: 28px;
@@ -285,8 +298,8 @@ footer{
   margin-bottom: 0px;
 }
 
-.carousel-caption h2{
-  font-size: 63px;
+.carousel-caption{
+  top: 5%;
 }
 
   /* Remove the edge padding needed for mobile */
@@ -364,4 +377,10 @@ margin-top: 8px;
 margin-bottom: 8px;
 }
 
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .carousel-caption h2{
+    font-size: 30px;
+  }
 }
