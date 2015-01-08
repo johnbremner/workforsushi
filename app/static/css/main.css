@@ -157,12 +157,9 @@ margin-bottom: 20px;
 .carousel-caption {
   bottom: auto;
   font-size: 30px;
-/*  left: auto;*/
   padding: 0px;
-/*  right: auto;*/
   text-align: center;
   top: 0%;
-/*  width: 100%;*/
   z-index: 10;
 }
 
