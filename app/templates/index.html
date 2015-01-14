@@ -39,10 +39,10 @@
             <p><a class="btn btn-default" href="{{ url_for('.menu') }}" role="button">Menu »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href="#hours-and-directions"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;"></a>
+            <a href="{{ url_for('.hours') }}"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Hours & Directions</h2>
             <p>591 Redwood Hwy Mill Valley, CA</p>
-            <p><a class="btn btn-default" href="#hours-and-directions" role="button">Hours & Directions »</a></p>
+            <p><a class="btn btn-default" href="{{ url_for('.hours') }}" role="button">Hours & Directions »</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div>
@@ -124,7 +124,7 @@
               Mon-Fri 11:30am-2pm</p>
               <p class="lead"><b>Dinner Hours</b><br>
                Mon-Thurs 5:30pm-9:30pm<br>
-              Fri and Sat 5:30pm-10pm<br> 
+              Fri and Sat 5:30pm-10pm<br>
                 Sun 5pm-9pm</p>
           </div>
           <div class="col-md-5">
