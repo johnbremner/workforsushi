@@ -28,10 +28,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-left baseTextStyleUl">
-                <li><a href="{{url_for('.index')}}"><strong>WELCOME</strong></a></li>
                 <li><a href="{{url_for('.about')}}"><strong>OUR STORY</strong></a></li>
                 <li><a href="{{url_for('.menu')}}"><strong>MENU</strong></a></li>
                 <li><a href="{{url_for('.hours')}}"><strong>HOURS & DIRECTIONS</strong></a></li>
+                <li><a href="{{url_for('.contact')}}"><strong>CONTACT US</strong></a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right baseTextStyleUl">
                 <li>
@@ -46,7 +46,7 @@
 {% block content %}
 
     {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
+    <div class="container alert alert-warning">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         {{ message }}
     </div>
