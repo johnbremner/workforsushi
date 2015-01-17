@@ -28,10 +28,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-left baseTextStyleUl">
-                <li><a href="{{url_for('.index')}}"><strong>WELCOME</strong></a></li>
                 <li><a href="{{url_for('.about')}}"><strong>OUR STORY</strong></a></li>
                 <li><a href="{{url_for('.menu')}}"><strong>MENU</strong></a></li>
-                <li><a href="#hours-and-directions"><strong>HOURS & DIRECTIONS</strong></a></li>
+                <li><a href="{{url_for('.hours')}}"><strong>HOURS & DIRECTIONS</strong></a></li>
+                <li><a href="{{url_for('.contact')}}"><strong>CONTACT US</strong></a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right baseTextStyleUl">
                 <li>
@@ -46,7 +46,7 @@
 {% block content %}
 
     {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
+    <div class="container alert alert-warning">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         {{ message }}
     </div>
@@ -60,11 +60,11 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <ul class="list-unstyled list-inline baseTextStyleUl social-list">
-                <li><a class="socialIcons"  href="https://www.facebook.com/robatagrill"><i class="fa fa-facebook fa-5x" title="facebook"></i></a></li>
-                <li><a class="socialIcons"  href="https://twitter.com/robatagrill"><i class="fa fa-twitter fa-5x" title="twitter"></i></a></li>
-                <li><a class="socialIcons"  href="http://www.yelp.com/biz/robata-grill-and-sushi-mill-valley"><i class="fa fa-yelp fa-5x" title="yelp"></i></a></li>
-                <li><a class="socialIcons"  href="http://www.pinterest.com/robatag/"><i class="fa fa-pinterest fa-5x" title="pinterest"></i></a></li>
-                <li><a class="socialIcons"  href="http://www.urbanspoon.com/r/6/89925/restaurant/Robata-Grill-Sushi-Mill-Valley"><i class="fa fa-spoon fa-5x" title="spoon"></i></a></li>
+                <li><a class="socialIcons"  href="https://www.facebook.com/robatagrill" target="_blank"><i class="fa fa-facebook fa-5x" title="facebook"></i></a></li>
+                <li><a class="socialIcons"  href="https://twitter.com/robatagrill" target="_blank"><i class="fa fa-twitter fa-5x" title="twitter"></i></a></li>
+                <li><a class="socialIcons"  href="http://www.yelp.com/biz/robata-grill-and-sushi-mill-valley" target="_blank"><i class="fa fa-yelp fa-5x" title="yelp"></i></a></li>
+                <li><a class="socialIcons"  href="http://www.pinterest.com/robatag/" target="_blank"><i class="fa fa-pinterest fa-5x" title="pinterest"></i></a></li>
+                <li><a class="socialIcons"  href="http://www.urbanspoon.com/r/6/89925/restaurant/Robata-Grill-Sushi-Mill-Valley" target="_blank"><i class="fa fa-spoon fa-5x" title="spoon"></i></a></li>
             <ul>
           </div>
         </div>
@@ -76,7 +76,7 @@
                 <li><a href="{{ url_for('.index') }}">Welcome</a></li>
                 <li><a href="{{ url_for('.about') }}">Our Story</a></li>
                 <li><a href="{{ url_for('.menu') }}">Menu</a></li>
-                <li><a href="#hours-and-directions">Hours & Directions</a></li>
+                <li><a href="{{url_for('.hours')}}">Hours & Directions</a></li>
                 <li><a href="#">Contact Us</a></li>
               </ul>
             </div>
@@ -113,5 +113,15 @@ if(  document.addEventListener  ){
         parallax: false
     });
 }
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  console.log(e.target.getAttribute('data-scrollto'));
+  var jumpTo = e.target.getAttribute('data-scrollto');
+  console.dir(document.getElementById('sushi'));
+  window.location.hash = jumpTo
+
+})
+
+
 </script>
 {% endblock %}

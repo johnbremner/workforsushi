@@ -10,8 +10,8 @@
   <a class="start" href="#start"><i class="fa fa-chevron-down fa-3x"></i></a>
      <div class="img-holder " data-image="{{ url_for('static', filename='images/test7.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/test7-mobile.jpg') }}" data-width="2000" data-height="1000"></div>
         <div class="carousel-caption">
-          <h2>Irashai Mase (welcome)<br>
-            <small class="robataColor">Robata Grill & Sushi</small>
+          <h2>Robata Grill & Sushi<br>
+            <small class="robataColor">Irashai Mase (welcome)</small>
           </h2>
         </div>
   </div>
@@ -30,19 +30,19 @@
             <a href="{{ url_for('.about') }}"><img class="img-square"  alt="140x140" src="{{ url_for('static', filename='images/flowers.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Story of Robata</h2>
             <p>The tradition of centuries old country style coooking.</p>
-            <p><a class="btn btn-default" href="{{ url_for('.about') }}"  role="button">Our Story »</a></p>
+            <p><a class="btn btn-default btn-lg" href="{{ url_for('.about') }}"  role="button">Our Story&nbsp;<i class="fa fa-users"></i></a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <a href="{{ url_for('.menu') }}"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/eel4.3.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Menu</h2>
             <p>Simple and delicious sushi.  By the fireside cooking.</p>
-            <p><a class="btn btn-default" href="{{ url_for('.menu') }}" role="button">Menu »</a></p>
+            <p><a class="btn btn-default btn-lg" href="{{ url_for('.menu') }}" role="button">Menu&nbsp;<i class="fa fa-cutlery"></i></a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href="#hours-and-directions"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;"></a>
+            <a href="{{ url_for('.hours') }}"><img class="img-square" data-src="holder.js/140x140" alt="140x140" src="{{ url_for('static', filename='images/map.jpg') }}" style="width: 200px; height: 200px;"></a>
             <h2>Hours & Directions</h2>
             <p>591 Redwood Hwy Mill Valley, CA</p>
-            <p><a class="btn btn-default" href="#hours-and-directions" role="button">Hours & Directions »</a></p>
+            <p><a class="btn btn-default btn-lg" href="{{ url_for('.hours') }}" role="button">Hours & Directions&nbsp;<i class="fa fa-clock-o"></i></a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div>
@@ -67,7 +67,8 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Authentic <span class="text-danger">Japanese Cuisine</span></h2>
-            <p class="lead">Each region of Japan still preserves its own unique taste by utilizing local products that have been passed on for generations.  Only genuine professional sushi chefs can reach your heart. You will appreciate the excellence of the professional sushi chefs at Robata.  </p>
+            <p class="lead">Each region of Japan still preserves its own unique taste by utilizing local products that have been passed on for generations.  At Robata each dish is composed to ensure that the intrinsic flavor of the ingredients endure. The food is prepared with delicacy to create a harmony of beauty and sapor. Let us share the tradition of Japanese cuisine with you.
+            </p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive"  alt="500x500" src="{{ url_for('static', filename='images/barrel.jpg') }}">
@@ -93,7 +94,7 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">History of <span class="text-danger">Sushi</span></h2>
-            <p class="lead">Sushi is one of the healthiest meals around, originating back to the 4th century BC of Southeast Asia.  Salted fish fermented with rice was an important source of preservation. Japan popularized eating the fish with rice and sushi became more of a cuisine rather than a way to preserve food.Eventually rice was mixed with vinegar and combined with various vegetables and dried preserved foods.</p>
+            <p class="lead">Sushi is one of the healthiest meals around, originating back to the 4th century BC of Southeast Asia.  Salted fish fermented with rice was an important source of preservation. Japan popularized eating the fish with rice and sushi became more of a cuisine rather than a way to preserve food. Eventually rice was mixed with vinegar and combined with various vegetables and dried preserved foods.</p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive" alt="500x500" src="{{ url_for('static', filename='images/test15.jpg') }}">
@@ -119,13 +120,16 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Hours and <span class="text-danger">Directions</span></h2>
-            <p class="lead">Lunch Hours | Mon-Fri 11:30am-2pm</p>
-              <p class="lead">Dinner Hours | Mon-Thurs 5:30pm-9:30pm</p>
-              <p class="lead">Fri and Sat 5:30pm-10pm | Sun 5pm-9pm</p>
+            <p class="lead"><b>Lunch Hours</b><br>
+              Mon-Fri 11:30am-2pm</p>
+              <p class="lead"><b>Dinner Hours</b><br>
+               Mon-Thurs 5:30pm-9:30pm<br>
+              Fri and Sat 5:30pm-10pm<br>
+                Sun 5pm-9pm</p>
           </div>
           <div class="col-md-5">
             <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-              <iframe width="100%" height="500" frameborder="0" style="border:0"
+              <iframe width="100%" height="350" frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?q=591%20Redwood%20Hwy%2C%20Mill%20Valley%2C%20CA%2094941%2C%20United%20States&key=AIzaSyDOtabQ4Iq9dpdsWrT_2ufS60zZpFdRnnM&zoom=11"></iframe>
           </div>
         </div>

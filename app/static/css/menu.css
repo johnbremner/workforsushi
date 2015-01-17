@@ -34,7 +34,8 @@
 }
 
 .menus .page-header{
-  margin-top: 75px;
+  margin-top: 50px;
+  padding-top: 25px;
 }
 
 .tab-content>.tab-pane {

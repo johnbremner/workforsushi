@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Robata Grill & Sushi{% endblock %}
+
+{% block page_content %}
+
+    <!-- Parallax
+    ================================================== -->
+  <div class="parallax-container">
+    <a class="start" href="#start"><i class="fa fa-chevron-down fa-3x"></i></a>
+     <div class="img-holder" data-image="{{ url_for('static', filename='images/Rice2.1.jpg') }}" data-image-mobile="{{ url_for('static', filename='images/Rice2.1-mobile.jpg') }}" data-width="2000" data-height="1000"></div>
+        <div class="carousel-caption">
+          <h2>Robata Grill & Sushi<br>
+            <small class="robataColor">Contact Us</small>
+          </h2>
+        </div>
+  </div>
+    <!-- /.parallax -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div id="start"></div>
+    <div class="container contact-form featurette">
+
+      <!-- START THE FEATURETTES -->
+      <div class="row">
+         <div class="col-md-6 col-md-offset-3 text-center"><h1>We'd love to here from you!</h1></div>
+         <div class="col-md-6 col-md-offset-3">{{ wtf.quick_form(contact_form, ) }}</div>
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+{% endblock %}
