@@ -1,5 +1,4 @@
 import os
-# from secrets import Secrets
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -10,11 +9,11 @@ class Config:
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    # MAIL_USERNAME = os.environ['MAIL_USERNAME'] or Secrets.SECRET_MAIL_USERNAME
-    # MAIL_PASSWORD = os.environ['MAIL_PASSWORD'] or Secrets.SECRET_MAIL_PASSWORD
-    # MAIL_SUBJECT_PREFIX = os.environ['MAIL_SUBJECT_PREFIX'] or Secrets.SECRET_MAIL_SUBJECT_PREFIX
-    # MAIL_SENDER = os.environ['MAIL_SENDER'] or  Secrets.SECRET_MAIL_SENDER
-    # APP_ADMIN = os.environ['APP_ADMIN'] or  Secrets.SECRET_APP_ADMIN
+    MAIL_USERNAME = os.environ('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_SUBJECT_PREFIX = os.environ.get('MAIL_SUBJECT_PREFIX')
+    MAIL_SENDER = os.environ.get('MAIL_SENDER')
+    APP_ADMIN = os.environ.get('APP_ADMIN')
     BOOTSTRAP_SERVE_LOCAL = True
 
     @staticmethod
