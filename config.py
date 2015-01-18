@@ -11,11 +11,11 @@ class Config:
     MAIL_PORT = 465
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
-    MAIL_USERNAME = os.environ['MAIL_USERNAME']
-    MAIL_PASSWORD = os.environ['MAIL_PASSWORD']
-    MAIL_SUBJECT_PREFIX = os.environ['MAIL_SUBJECT_PREFIX']
-    MAIL_SENDER = os.environ['MAIL_SENDER']
-    APP_ADMIN = os.environ['APP_ADMIN']
+    # MAIL_USERNAME = os.environ['MAIL_USERNAME']
+    # MAIL_PASSWORD = os.environ['MAIL_PASSWORD']
+    # MAIL_SUBJECT_PREFIX = os.environ['MAIL_SUBJECT_PREFIX']
+    # MAIL_SENDER = os.environ['MAIL_SENDER']
+    # APP_ADMIN = os.environ['APP_ADMIN']
     BOOTSTRAP_SERVE_LOCAL = True
 
     @staticmethod
