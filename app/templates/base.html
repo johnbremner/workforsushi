@@ -117,8 +117,7 @@ if(  document.addEventListener  ){
     var touch = Modernizr.touch;
     $('.img-holder').imageScroll({
         imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-        touch: touch,
-        parallax: false
+        touch: touch
     });
 }
 
