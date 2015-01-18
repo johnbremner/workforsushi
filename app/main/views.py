@@ -34,3 +34,6 @@ def contact():
         return redirect(url_for('main.contact'))
     return render_template('contact.html', contact_form = contact_form)
 
+@main.route('/imageScroll')
+def imageScroll():
+    return render_template('imageScroll.html')
