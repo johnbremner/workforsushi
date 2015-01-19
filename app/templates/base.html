@@ -110,13 +110,19 @@
 <script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='js/jquery.imageScroll.min.js') }}"></script>
 {{ moment.include_moment() }}
 <script>
-
-        var touch = Modernizr.touch;
-        $('.img-holder').imageScroll({
-            imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-            touch: touch
-        });
-
+if(  document.addEventListener  ){
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch
+    });
+} else {
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch
+    });
+}
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   console.log(e.target.getAttribute('data-scrollto'));
