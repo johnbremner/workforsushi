@@ -17,7 +17,7 @@ class Config:
     # MAIL_SUBJECT_PREFIX = os.environ['MAIL_SUBJECT_PREFIX']
     # MAIL_SENDER = os.environ['MAIL_SENDER']
     # APP_ADMIN = os.environ['APP_ADMIN']
-    # BOOTSTRAP_SERVE_LOCAL = True
+    BOOTSTRAP_SERVE_LOCAL = True
 
     @staticmethod
     def init_app(app):
