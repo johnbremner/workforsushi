@@ -20,10 +20,6 @@
   margin-top: 75px;
 }
 
-.col-md-2 {
-  display: none;
-}
-
 .extra-margin-top{
   margin-top: 50px;
 }
@@ -41,6 +37,7 @@
 .tab-content>.tab-pane {
   display: block;
   margin-top: 75px;
+  visibility: visible;
 }
 
 .tab-content>.tab-pane:first-child {
@@ -62,4 +59,10 @@
   display: block;
   margin-top: 0px;
   }
+}
+
+@media (max-width: 992px) {
+.col-md-2 {
+  display: none;
+}
 }
