@@ -62,7 +62,15 @@
 }
 
 @media (max-width: 992px) {
+<<<<<<< HEAD
 .col-md-2 {
   display: none;
 }
 }
+=======
+  .col-md-2 {
+    display: none;
+  }
+}
+
+>>>>>>> 88d7c9aeeffbd474dff85f760c6efa47326de42d
