@@ -1,6 +1,11 @@
 .body {
   position: relative;
 }
+
+.col-md-2 {
+  display: block;
+}
+
 .affix {
   width: inherit; //helped keep the content the same size on fluid layouts
   position: fixed;
