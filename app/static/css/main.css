@@ -151,6 +151,10 @@ margin-bottom: 20px;
   position: relative;
 }
 
+#robata-home .parallax-container{
+  margin-bottom: 50px;
+}
+
   .parallax-container address{
     bottom: 0px;
     color: #fff;
@@ -180,6 +184,8 @@ margin-bottom: 20px;
   text-align: center;
   top: 0%;
   z-index: 10;
+  left: 5%;
+  right: 5%;
 }
 
 .carousel-caption h2{
@@ -378,6 +384,7 @@ footer{
 }
 
 @media (min-width: 767px) {
+
 .slide1{
   background: url('../images/sushi1org.jpg') no-repeat;
   height: 500px;
@@ -395,8 +402,13 @@ margin-bottom: 8px;
 
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media (max-width : 480px) {
   .carousel-caption h2{
     font-size: 30px;
   }
+
+.parallax-window{
+  min-height: 200px;
+}
+
 }
