@@ -160,6 +160,11 @@ margin-bottom: 20px;
     z-index: 1;
   }
 
+.parallax-window{
+  background: transparent;
+  min-height: 500px;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
