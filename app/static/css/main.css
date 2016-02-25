@@ -292,15 +292,11 @@ footer{
 .start{
   display: block;
     position: absolute;
-    bottom: 0px;
+    bottom: 25px;
     left: 50%;
-    margin-left: -47px;
-    color: #fff;
+    margin-left: -42px;
     z-index: 50;
-    background-color: #a94442;
-    padding: 5px 20px 0px 20px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    padding: 10px;
 }
 
 .headerFooterStyle .baseTextStyleUl li>a{
