@@ -1,11 +1,13 @@
 $(function() {
 
-    // $(window).scroll(function(){
-    //     if( $('body').scrollTop() > 35 ){
-    //         $('.navbar').addClass('navbar-fixed-top');
-    //     } else {
-    //         $('.navbar').removeClass('navbar-fixed-top');
-    //     }
-    // });
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this).attr("href");
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000);
+    }
+});
 
 });
