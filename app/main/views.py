@@ -27,9 +27,8 @@ def contact():
         email = contact_form.email.data
         phone = contact_form.phone.data
         message = contact_form.message.data
-        if current_app.config['APP_ADMIN']:
-                send_email(current_app.config['APP_ADMIN'], 'Robata Grill Inquiry',
-                           'mail/message', name=name, email=email, phone=phone, message=message)
+        send_email(current_app.config['MAIL_USERNAME'], 'Robata Grill Inquiry',
+                   'mail/message', name=name, email=email, phone=phone, message=message)
         flash('Your message has been sent. We will be in contact with you shortly.')
         return redirect(url_for('main.contact'))
     return render_template('contact.html', contact_form = contact_form)
