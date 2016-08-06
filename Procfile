@@ -1,1 +1,1 @@
-web: gunicorn manage:app --log-file=-
+web: newrelic-admin run-program gunicorn manage:app --log-file=-
