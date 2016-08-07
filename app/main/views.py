@@ -1,7 +1,11 @@
-from flask import render_template, current_app, flash, redirect, url_for
+from flask import render_template, current_app, flash, redirect, url_for, send_from_directory
 from . import main
 from forms import ContactForm
 from ..email import send_email
+
+@main.route('/<path:filename>')
+def static_from_root(filename):
+    return send_from_directory(current_app.static_folder, filename)
 
 @main.route('/')
 def index():
