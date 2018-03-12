@@ -31,7 +31,6 @@ html5lib==1.0b3
 httpie==0.7.2
 itsdangerous==0.24
 newrelic==2.106.1.88
-psycopg2==2.5.1
 python-dateutil==2.7.0
 python-editor==1.0.3
 requests==2.1.0
