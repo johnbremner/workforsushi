@@ -1,11 +1,12 @@
-#!/Users/jordandietch/Python/flasky/venv/bin/python
-
-# -*- coding: utf-8 -*-
+#!/Users/jordandietch/Documents/GitHub/work_for_sushi/venv/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'alembic==0.9.8','console_scripts','alembic'
+__requires__ = 'alembic==0.9.8'
 import re
 import sys
-
-from alembic.config import main
+from pkg_resources import load_entry_point
 
 if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('alembic==0.9.8', 'console_scripts', 'alembic')()
+    )
